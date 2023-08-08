@@ -1,0 +1,112 @@
+.bodi{
+	margin: 30px 30px;
+	padding: 0;
+    justify-content: center;
+}
+
+.bodi {
+	display: flex;
+	
+	align-items: center;
+	flex-wrap: wrap;
+	background: #f2eded;
+	min-height: 100vh;
+}
+
+
+.containering {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 40px 0;
+}
+
+.containering .cardc {
+	position: relative;
+	width: 300px;
+	height: 400px;
+	background: rgba(255, 255, 255, 0.05);
+	margin: 20px;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	backdrop-filter: blur(10px);
+}
+
+.containering .cardc .contenting {
+	position: relative;
+	display: flex;
+	
+	align-items: center;
+	flex-direction: column;
+	transition: 0.5s;
+}
+
+.containering .cardc:hover .contenting {
+	transform: translateY(-20px);
+}
+
+.containering .cardc .contenting .imgBx {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+}
+
+.containering .cardc .contenting .imgBx img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.containering .cardc .contenting .contentingBx h3 {
+	color: #e06363;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 500;
+	font-size: 18px;
+	text-align: center;
+	margin: 20px 0 10px;
+	line-height: 1.1em;
+}
+
+.containering .cardc .contenting .contentingBx h3 span {
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: initial;
+}
+
+.containering .cardc .sci {
+	position: absolute;
+	bottom: 50px;
+	display: flex;
+}
+
+.containering .cardc .sci li {
+     
+	list-style: none;
+    margin: 0px 10px;
+	
+	transform: translateY(40px);
+	transition: 0.5s;
+	opacity: 0;
+}
+
+.containering .cardc:hover .sci li {
+	transform: translateY(0px);
+	opacity: 1;
+}
+
+.containering .cardc .sci li a {
+     
+	color: #9d0707;
+	font-size: 20px;
+}
